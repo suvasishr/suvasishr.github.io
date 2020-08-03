@@ -2,82 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <title>Responsive-Blog-Site</title>
 </head>
 <body>
+  
+    <section id="header">
+      <div class="main-nav wrapper">
+        <div class="logo">
+          <h3>Indoor Plant</h3>
+          <P class="subtitle">Live in nature</P>
+        </div>
+        <nav>
+          <ul >
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="recent.html">Recent blog</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+       <!--This is Featured Article-->
+
+    <section id="feature">
+      <div class="wrapper">
+        <div class="main">
+          <article class="article-featured">
+            <img class="article-img" src="assets/img/feature-img.jpg" alt="Featured-image">
+            <p class="article-info">26 May, 2020 | 3 Comments</p>
+            <h2 class="article-title">Swiss Cheese Plant</h2>
+            
+            <p class="article-body"> <strong> Swiss Cheese Plant: </strong>The scientific name Monstera deliciosa refers, in part, to the edible pineapple-like fruit this rainforest plant can provide – just make sure to read about how to ripen the fruits properly to avoid irritation upon consuming. These stunning large-leafed plants make a great statement piece and add warm, tropical appeal to any interior.</p>
+            <a href="#" class="article-read-more">Continue reading....</a>
+          </article>
+
+           <!----This is Recent Article section----->
+
+          <article class="article-recent">
+            <div class="article-recent-main">
+              <h2 class="article-title">Calathea Orbifolia</h2>
+              <p class="article-body"> Calathea Orbifolia: Smooth streaks of white stand out against the vivid green leaves of the Calathea orbifolia, like a living painting. These plants are a little tricky to care for compared to some of the others on the list, but the key is to stay calm and make adjustments slowly. Moist soil, good drainage, and low but reliable lighting conditions are a great place to start.</p>
+              <a href="#" class="article-read-more">Continue reading....</a>
+            </div>
+              
+            <div class="article-recent-secondary">
+              <img class="article-img" src="assets/img/article-img-1.jpg" alt="article-img-1">
+              <p class="article-info">26 May, 2020 | 3 Comments</p>
+            </div>
+          </article>
+          <article class="article-recent">
+            <div class="article-recent-main">
+              <h2 class="article-title">Giant White Bird Of Paradise</h2>
+              <p class="article-body"> Giant White Bird Of Paradise: Now this is a statement piece! Strelitzia nicolai, or the giant white bird of paradise, grows up to 20 feet tall in ideal conditions and certainly tall enough to make an impression in any interior or atrium. While many plants are sensitive to full sun, this plant welcomes it. Keep the soil moist and remember to fertilize monthly to get the best results.</p>
+            <a href="#" class="article-read-more">Continue reading....</a>
+            </div>
+              
+            <div class="article-recent-secondary">
+              <img class="article-img" src="assets/img/article-img-2.jpg" alt="article-img-2">
+              <p class="article-info">26 May, 2020 | 3 Comments</p>
+            </div>
+          </article>
+          <article class="article-recent">
+            <div class="article-recent-main">
+              <h2 class="article-title">Peace Lily</h2>
+              <p class="article-body">Peace Lily: Sometimes flowering plants prove the most challenging to keep healthy, but certain lilies in the Spathiphyllum genus (the peace lily family) are on the more easygoing side. Peace lilies are forgiving plants but seem to do best in indirect sunlight with access to shade. Wait to water the plant until you notice a bit of drooping in the leaves for best results. These plants need reliable drainage. Consider planting in a simple pot to let the beautiful flowers take center stage.</p>
+            <a href="#" class="article-read-more">Continue reading....</a>
+            </div>
+              
+            <div class="article-recent-secondary">
+              <img class="article-img" src="assets/img/article-img-3.jpg" alt="article-img-3">
+              <p class="article-info">26 May, 2020 | 3 Comments</p>
+            </div>
+          </article>
+        </div>
 
 
-  <div class="keys">
-    <div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span class="sound">clap</span>
-    </div>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">hihat</span>
-    </div>
-    <div data-key="68" class="key">
-      <kbd>D</kbd>
-      <span class="sound">kick</span>
-    </div>
-    <div data-key="70" class="key">
-      <kbd>F</kbd>
-      <span class="sound">openhat</span>
-    </div>
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">boom</span>
-    </div>
-    <div data-key="72" class="key">
-      <kbd>H</kbd>
-      <span class="sound">ride</span>
-    </div>
-    <div data-key="74" class="key">
-      <kbd>J</kbd>
-      <span class="sound">snare</span>
-    </div>
-    <div data-key="75" class="key">
-      <kbd>K</kbd>
-      <span class="sound">tom</span>
-    </div>
-    <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-  </div>
+          <!---This is Sidebar-Widget-->
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+        
+        <div class="aside">
+          <div class="sidebar-widget">
+            <h2 class="widget-title">
+              About Me
+            </h2> 
+            <img class="widget-image" src="assets/img/widget-thamb-1.jpg" alt="widget-thamb-1">
+            <p class="widget-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error corporis qui expedita modi dolorum sapiente? Eos aut quibusdam nulla earum vitae, similique consequatur quo, voluptatibus a modi magnam, accusantium aliquid! quidem.</p>
+          </div>
 
-<script>
-  function removeTransition(e) {
-    if (e.propertyName !== 'transform') return;
-    e.target.classList.remove('playing');
-  }
+          <div class="sidebar-widget">
+            <h2 class="widget-title">This is widget subtitle</h2>
+            <div class="widget-recent-post">
+              
+              <img src="assets/img/widget-thamb-2.jpg" alt="widget-thamb-2" class="widget-image">
+              <h3 class="widget-post-title">Calathea Orbifolia</h3>
+            </div>
+            <div class="widget-recent-post">
+              
+              <img src="assets/img/widget-thamb-3.jpg" alt="widget-thamb-3" class="widget-image">
+              <h3 class="widget-post-title">Peace Lily</h3>
+            </div>
+            <div class="widget-recent-post">
+              
+              <img src="assets/img/widget-thamb-4.jpg" alt="widget-thamb-4" class="widget-image">
+              <h3 class="widget-post-title">Giant White Bird Of Paradise</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  function playSound(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-    if (!audio) return;
-
-    key.classList.add('playing');
-    audio.currentTime = 0;
-    audio.play();
-  }
-
-  const keys = Array.from(document.querySelectorAll('.key'));
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  window.addEventListener('keydown', playSound);
-</script>
-
-
+  <!----This is Footer-->
+  <section id="footer">
+    <div class="wrapper">
+      <p class="footer-text">Copyright &copy;2020<br>
+        By SuvasishR
+      </p>
+    </div>
+  </section>
 </body>
 </html>
